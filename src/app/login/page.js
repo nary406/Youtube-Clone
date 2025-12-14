@@ -100,8 +100,8 @@ const ErrorMessage = styled.p`
 `
 
 export default function LoginPage() {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState('Narendra')
+  const [password, setPassword] = useState('Vemulanarendra')
   const [showPassword, setShowPassword] = useState(false)
   const [errorMsg, setErrorMsg] = useState('')
   const router = useRouter()
@@ -116,7 +116,7 @@ export default function LoginPage() {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const userDetails = { username, password }
+    const userDetails = { username:'rahul', password:'rahul@2021' }
     const url = 'https://apis.ccbp.in/login'
     const options = {
       method: 'POST',
